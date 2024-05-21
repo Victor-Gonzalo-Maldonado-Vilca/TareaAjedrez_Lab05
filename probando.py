@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = queen.negative()
+x = bishop.negative()
 draw(x)
