@@ -42,7 +42,7 @@ class Picture:
     alado = []
     longitud = len(self.img)
     for i in range(longitud):
-      alado.append(self[i] + p[i])
+      alado.append(self.img[i] + p[i])
     return Picture(alado)
 
   def up(self, p):
