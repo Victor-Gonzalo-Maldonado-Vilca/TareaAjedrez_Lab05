@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = bishop.negative()
+x = square
 draw(x)
