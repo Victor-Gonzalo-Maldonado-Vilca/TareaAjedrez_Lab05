@@ -39,7 +39,11 @@ class Picture:
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
-    return Picture(None)
+    alado = []
+    longitud = len(self.img)
+    for i in range(longitud):
+      alado.append(self[i] + p[i])
+    return Picture(alado)
 
   def up(self, p):
     return Picture(None)
