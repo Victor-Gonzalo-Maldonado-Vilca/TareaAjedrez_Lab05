@@ -40,9 +40,8 @@ class Picture:
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
     alado = []
-    longitud = len(self.img)
-    for i in range(longitud):
-      alado.append(self.img[i] + p[i])
+    for value1,value2 in zip(self.img,p)
+      alado.append(value1 + value2)
     return Picture(alado)
 
   def up(self, p):
