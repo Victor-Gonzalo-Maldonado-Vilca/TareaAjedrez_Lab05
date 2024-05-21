@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = knight
+x = rock._invColor(rock.color)
 draw(x)

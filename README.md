@@ -36,9 +36,9 @@ Para resolver los siguientes ejercicios sólo está permitido usar ciclos, condi
   1. Implemente los métodos de la clase Picture. Se recomienda que implemente la clase picture por etapas, probando realizar los dibujos que se muestran en la siguiente preguntas.
   2. Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):
 <p align="center">
-  <img src ="img/ejerciciosP.png" alt="Ejercicio Parte 1"/>
+  <img src ="img/ejerciciosP.png" alt="Ejercicios Parte 1"/>
 </p>
 <p align="center">
-  <img src ="img/ejerciciosP2.png" alt="Ejercicio Parte 2"/>
+  <img src ="img/ejerciciosP2.png" alt="Ejercicios Parte 2"/>
 </p>
  
