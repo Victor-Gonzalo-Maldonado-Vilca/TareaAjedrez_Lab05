@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = square.negative()
+x = pawn.negative()
 draw(x)
