@@ -30,7 +30,10 @@ class Picture:
     """ Devuelve un negativo de la imagen """
     negativo = []
     for value in self.img:
-      negativo.append(value._invColor())
+      valueNegative = ""
+      for i in range(len(value)):
+        valueNegative += _invColor(value[i])
+      negativo.append(valueNegative)
     return Picture(negativo)
 
   def join(self, p):
