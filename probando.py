@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = king.horizontalMirror()
+x = bishop.horizontalMirror()
 draw(x)
