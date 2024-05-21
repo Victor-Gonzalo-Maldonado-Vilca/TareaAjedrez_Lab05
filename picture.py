@@ -32,7 +32,7 @@ class Picture:
     for value in self.img:
       valueNegative = ""
       for i in range(len(value)):
-        valueNegative += self.img._invColor(value[i])
+        valueNegative += self._invColor(value[i])
       negativo.append(valueNegative)
     return Picture(negativo)
 
