@@ -1,3 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-draw(rock)
+x = verticalMirror(rock)
+draw(x)
