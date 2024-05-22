@@ -80,7 +80,10 @@ class Picture:
     return Picture(repeath)
 
   def verticalRepeat(self, n):
-    repeatv = self.img * n
+    repeatv = []
+    for i in range(n):
+      for value in self.img:
+        repeatv.append(value)
     return Picture(repeatv)
 
   #Extra: Sólo para realmente viciosos 
