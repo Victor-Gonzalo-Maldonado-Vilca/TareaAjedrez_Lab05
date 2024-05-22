@@ -73,7 +73,10 @@ class Picture:
         la cantidad de veces que indique el valor de n """
     repeath = []
     for value in self.img:
-      repeath.append(value * n)
+      cadena = ""
+      for i in range(n):
+        cadena += value
+      repeath.append(cadena)
     return Picture(repeath)
 
   def verticalRepeat(self, n):
