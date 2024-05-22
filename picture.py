@@ -94,5 +94,7 @@ class Picture:
     for i in range (len(self.img[0])):
       for value in self.img:
         rotar.append(value[i])
-    return Picture(rotar)
+    for value in rotar:
+      print(value)
+    
 
