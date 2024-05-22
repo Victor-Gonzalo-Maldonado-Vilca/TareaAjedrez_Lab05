@@ -59,12 +59,12 @@ class Picture:
     for value1,value2 in zip(self.img,p.img):
       cadena = ""
       for i in range(len(self.img)):
-        if(value1[i] != ''):
-          cadena += value2[i]
-        else:
+        if(value2[i] == ''):
           cadena += value1[i]
+        else:
+          cadena += value2[i]
       sobre.append(cadena)
-    return Picture(cadena)
+    return Picture(sobre)
   
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
