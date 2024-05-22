@@ -93,7 +93,8 @@ class Picture:
     rotar = []
     for i in range (len(self.img[0])):
       cadena = ""
-      for value in self.img[len(self.img) - i - 1]:
+      for c in range(len(self.img) -1, -1, -1):
+        value = self.img[c]
         cadena += value[i]
       rotar.append(cadena)
     return  Picture(rotar)

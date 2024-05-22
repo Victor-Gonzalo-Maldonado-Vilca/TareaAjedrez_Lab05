@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x =  rock.rotate().rotate().rotate().rotate()
+x = square.under(rock).up(king).rotate()
 draw(x)
