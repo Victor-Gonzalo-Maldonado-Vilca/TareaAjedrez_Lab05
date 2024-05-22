@@ -45,7 +45,9 @@ class Picture:
     return Picture(alado)
 
   def up(self, p):
-    return Picture(None)
+    encima = []
+    encima.append(self.img + p.img)
+    return Picture(encima)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
