@@ -46,7 +46,10 @@ class Picture:
 
   def up(self, p):
     encima = []
-    encima.append(self.img + p.img)
+    for value1 in p.img:
+      encima.append(value1)
+    for value2 in self.img:
+      encima.append(value2)
     return Picture(encima)
 
   def under(self, p):
