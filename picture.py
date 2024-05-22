@@ -73,11 +73,12 @@ class Picture:
         la cantidad de veces que indique el valor de n """
     repeath = []
     for value in self.img:
-      repeath.append(value*n)
+      repeath.append(value * n)
     return Picture(repeath)
 
   def verticalRepeat(self, n):
-    return Picture(None)
+    repeatv = self.img * n
+    return Picture(repeatv)
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
