@@ -5,4 +5,5 @@ fichas = rock.join(knight).join(bishop).join(queen).join(king).join(bishop).join
 peones = pawn.horizontalRepeat(8)
 fichasBlancas = fila.negative().under(fichas).up(fila.under(peones)) 
 fichasNegras = fila.negative().under(peones.negative()).up(fila.under(fichas.negative()))
-draw(fila.under(fichasNegras))
+tablero = fichasBlancas.up(fila.negative().up(fila).verticalRepeat(2)).up(fichasNegras)
+draw(fila.under(tablero))
