@@ -45,11 +45,7 @@ class Picture:
     return Picture(alado)
 
   def up(self, p):
-    encima = []
-    for value1 in p.img:
-      encima.append(value1)
-    for value2 in self.img:
-      encima.append(value2)
+    encima = p.img + self.img
     return Picture(encima)
 
   def under(self, p):
