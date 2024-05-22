@@ -1,5 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x =  rock.rotate()
-for value in x:
-    print(value)
+x =  rock.rotate().rotate().rotate().rotate()
+draw(x)

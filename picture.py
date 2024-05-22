@@ -92,9 +92,9 @@ class Picture:
     o antihorario"""
     rotar = []
     for i in range (len(self.img[0])):
-      for value in self.img:
-        rotar.append(value[i])
-    for value in rotar:
-      print(value)
-    
+      cadena = ""
+      for value in reversed(self.img):
+        cadena += value[i]
+      rotar.append(cadena)
+    return  Picture(rotar)
 
