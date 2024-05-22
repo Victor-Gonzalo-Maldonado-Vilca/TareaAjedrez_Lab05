@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = square.under(rock)
+x = square.up(rock).join(king).under(rock)
 draw(x)
