@@ -42,7 +42,9 @@ class Picture:
     alado = []
     i = 0
     for value in self.img:
-      alado.append(self.img + p.img[i])
+      alado.append(value)
+    for value in p.img:
+      alado[i] += value
       i += 1
     return Picture(alado)
 
