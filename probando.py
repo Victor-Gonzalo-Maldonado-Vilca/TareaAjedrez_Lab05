@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = queen.join(square)
+x = rock.rotate().rotate()
 draw(x)
