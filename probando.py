@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = rock.rotate().rotate()
+x = rock.verticalRepeat(4)
 draw(x)
