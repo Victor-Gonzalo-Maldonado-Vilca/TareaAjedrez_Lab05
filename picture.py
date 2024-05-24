@@ -32,13 +32,7 @@ class Picture:
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
-    alado = []
-    i = 0
-    for value in self.img:
-      alado.append(value)
-    for value in p.img:
-      alado[i] += value
-      i += 1
+    alado = [value1 + value2 for value1,value2 in zip(self.img,p.img)]
     return Picture(alado)
 
   def up(self, p):

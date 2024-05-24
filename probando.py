@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = king.negative().negative()
+x = king.negative()
 draw(x)
