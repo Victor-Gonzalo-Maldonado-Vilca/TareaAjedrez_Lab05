@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = rock.verticalRepeat(4)
+x = rock.horizontalRepeat(4)
 draw(x)
