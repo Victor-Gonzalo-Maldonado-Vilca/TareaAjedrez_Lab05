@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = rock.horizontalMirror()
+x = knight.horizontalMirror().negative().verticalMirror().horizontalMirror()
 draw(x)
