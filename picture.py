@@ -20,10 +20,8 @@ class Picture:
 
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
-    horizontal = []
     longitud = len(self.img)
-    for i in range (longitud):
-      horizontal.append(self.img[longitud - i - 1])
+    horizontal = [self.img[longitud - i - 1] for i in range (longitud)]
     return Picture(horizontal)
 
   def negative(self):
