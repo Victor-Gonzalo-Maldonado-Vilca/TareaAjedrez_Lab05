@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = king.join(king)
+x = queen.join(square)
 draw(x)
