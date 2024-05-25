@@ -41,7 +41,7 @@ class Picture:
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
     sobre = [''.join(value1[i] if value2[i] == ' ' else value2[i] for i in range(len(value1))) for value1,value2 in zip(self.img,p.img)]
-    return Picture(sobre)
+    return Picture(sobre) if len(self.img) == len(p.img) else Picture(p.img) 
   
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
