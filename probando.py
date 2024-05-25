@@ -1,4 +1,4 @@
 from chessPictures import *
 from interpreter import draw
-x = knight.join(rock)
+x = knight.verticalRepeat(5)
 draw(x)
